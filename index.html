@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIZZERIA IL NAPOLITANO</title>
+
+    <link href="css/fontawesome.css" rel="stylesheet">
+  <link href="css/brands.css" rel="stylesheet">
+  <link href="css/solid.css" rel="stylesheet">
+  
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,7 +69,7 @@
                     <figcaption>
                         <h3>FUGAZZETA <p>$1600</p></h3>
                         <time>05/07/23</time>
-                        <br><button class="button">AÑADIR AL CARRITO</button>
+                        <br><button value=1 class="button">AÑADIR AL CARRITO <i class="fa-solid fa-cart-shopping"></i></button>
                     </figcaption>
                 </figure>
                 
@@ -79,7 +84,7 @@
                     <figcaption>
                         <h3>PIZZA 4 QUESOS <p>$2300</p></h3>
                         <time>05/07/23</time>
-                        <br><button class="button">AÑADIR AL CARRITO</button>
+                        <br><button value=2 class="button">AÑADIR AL CARRITO <i class="fa-solid fa-cart-shopping"></i></button>
                     </figcaption>
                 </figure>
                 
@@ -94,7 +99,7 @@
                     <figcaption>
                         <h3>PIZZA DE ALBAHACA <p>$1700</p></h3>
                         <time>05/07/23</time>
-                        <br><button class="button">AÑADIR AL CARRITO</button>
+                        <br><button value=3 class="button">AÑADIR AL CARRITO <i class="fa-solid fa-cart-shopping"></i></button>
                     </figcaption>
                 </figure>
             </div>
@@ -106,11 +111,11 @@
             <div class="box">
                 <figure>
                     <img src="img/fugazzeta_cleanup.jpg" alt="Fugazzeta">
-                    <figcaption>
+                    <figcapcha>
                         <h3>PIZZA DE MUZZARELLA <p>$1700</p></h3>
                         <time>05/07/23</time>
-                        <br><button class="button">AÑADIR AL CARRITO</button>
-                    </figcaption>
+                        <br><button value=4 class="button">AÑADIR AL CARRITO <i class="fa-solid fa-cart-shopping"></i></button>
+                    </figcapcha>
                 </figure>
             </div>
         </li>
@@ -123,7 +128,7 @@
                     <figcaption>
                         <h3>PIZZA NAPOLITANA <p>$1900</p></h3>
                         <time>05/07/23</time>
-                        <br><button class="button">AÑADIR AL CARRITO</button>
+                        <br><button value=5 class="button">AÑADIR AL CARRITO <i class="fa-solid fa-cart-shopping"></i></button>
                     </figcaption>
                 </figure>
             </div>
@@ -137,8 +142,21 @@
                     <figcaption>
                         <h3>PIZZA DE RUCULA Y JAMON CRUDO <p>$2500</p></h3>
                         <time>05/07/23</time>
-                        <br><button class="button">AÑADIR AL CARRITO</button>
+                        <br><button value=6 class="button">AÑADIR AL CARRITO <i class="fa-solid fa-cart-shopping"></i></button>
                     </figcaption>
+                </figure>
+            </div>
+        </li>
+
+        <li>
+            <div class="box">
+                <figure>
+                    <img src="img/pizza-de-jamon-y-morron.jpg" alt="Jamon y Morron">
+                    <figcapcha>
+                        <h3>PIZZA DE JAMÓN Y MORRÓN <p>$2300</p></h3>
+                        <time>05/07/23</time>
+                        <br><button value=7 class="button">AÑADIR AL CARRITO <i class="fa-solid fa-cart-shopping"></i></button>
+                    </figcapcha>
                 </figure>
             </div>
         </li>
@@ -147,7 +165,36 @@
 
     </div>
     <footer class="footer">
+        <div id="nav-footer"><a href="login.html">AREA PRIVADA</a></div>
+        <p>&nbsp;</p>
         <p> &COPY; 2023 </p>  
     </footer>
+<script src="main.js"></script>
+
+
+<!--<script>  SE PASA CODIGO DE ABAJO A MAIN.JS
+     
+const countButtons=document.querySelectorAll ("button").length;
+     let products=[];
+
+for(i=0; i<countButtons; i++){
+document.querySelectorAll ("button")[i].addEventListener("click",showValue);
+}
+
+  function showValue(){
+      if((this.value==4)|| (this.value==5)){
+        products.push(this.value + "PROMO");
+      }
+      else {products.push(this.value);}
+      /*this.value;*/
+      
+      alert(products.toString());
+
+  }
+     </script>
+ -->
+
 </body>
 </html>
+
+<!---->

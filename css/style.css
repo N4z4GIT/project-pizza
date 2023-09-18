@@ -36,9 +36,8 @@ nav ul li a:hover{
     color: black;
     letter-spacing: 2px;
 } 
-.footer {
-    display: flex;
-    justify-content: center;
+footer {
+    text-align: center;
     color: #000;
     font-size: 1rem;
     font-family: 'Oswald', sans-serif;;
@@ -60,12 +59,12 @@ nav ul li a:hover{
     box-sizing: border-box;
 }
 
-.gallery li box{
+.gallery li .box{
     border: 2px solid #e1e8ee;
     padding: 6px 6px 30px 6px;
 }
 
-.gallery li box img{
+.gallery li .box img{
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -114,6 +113,64 @@ nav ul li a:hover{
     font-family: 'Work Sans', sans-serif;
 }
 
+footer #nav-footer{
+    width: 100%;
+    text-align: center;
+}
+
+/* FUENTE LATO */
+/*.container{
+font-family: 'Lato', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}*/
+
+
+
+/*svg{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}*/
+
+
+@media (max-width:960px){
+    #header-container{
+        flex-direction: column;
+    }
+.gallery{
+    flex-direction: column;
+    margin-top: 60px;
+}
+.gallery li{
+    width: 100%;
+    justify-content: center;
+}
+}
+
+
+
+.form-sigin{
+    max-width: 380px;
+    background-color: #fff;
+    border: none;
+    padding: 15px 35px 45px 35px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.container{
+    font-family: 'Lato', sans-serif;
+    background: rgb(0,0,36);
+background: linear-gradient(180deg, rgba(0,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
 
 /*h1 #PIZZERIA {
     color: black;
